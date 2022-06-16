@@ -6,7 +6,7 @@ import GlobalStyle from "./components/globalStyle";
 import About from "./pages/about";
 import OurWork from "./pages/OurWork";
 import Contact from "./pages/Contact";
-
+import Nav from "./components/Nav";
 //ruter
 
 import { Switch, Route } from "react-router-dom";
@@ -16,6 +16,7 @@ function App() {
     <>
       <div className="App">
         <GlobalStyle />
+        <Nav />
         <Switch>
           <Route path="/" exact>
             <About />
