@@ -1,43 +1,33 @@
 import React from "react";
 import home from "../images/home.png";
 import styled from "styled-components";
+import { About, Description, Image, Hide } from "../styles";
 
 const AboutSection = () => {
   return (
     <About>
-      <div className="description">
+      <Description>
         <div className="title">
-          <div className="hide">
+          <Hide>
             <h2>WE work to make</h2>
-          </div>
-          <div className="hide">
+          </Hide>
+          <Hide>
             <h2>
               your <span>Dream</span> come
             </h2>
-          </div>
-          <div className="hide">
+          </Hide>
+          <Hide>
             <h2>True</h2>
-          </div>
+          </Hide>
         </div>
         <p>Contact me on related to any web development </p>
         <button>contact me</button>
-      </div>
-      <div className="image">
+      </Description>
+      <Image>
         <img src={home} alt="the laptop" />
-      </div>
+      </Image>
     </About>
   );
 };
-
-//styles here javascript
-
-const About = styled.div`
-  min-height: 90vh;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 5rem 10rem;
-  color: white;
-`;
 
 export default AboutSection;
