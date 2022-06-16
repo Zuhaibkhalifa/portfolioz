@@ -1,2 +1,0 @@
-# portfolioz
-all of work
