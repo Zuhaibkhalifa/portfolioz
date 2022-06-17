@@ -3,13 +3,14 @@ import React from "react";
 
 import GlobalStyle from "./components/globalStyle";
 
-import About from "./pages/about";
+import About from "./pages/About";
 import OurWork from "./pages/OurWork";
 import Contact from "./pages/Contact";
 import Nav from "./components/Nav";
+// import WorkDetail from "./pages/WorkDetail";
 //ruter
 
-import { Switch, Route } from "react-router-dom";
+import { Route, Switch } from "react-router-dom";
 
 function App() {
   return (
@@ -18,13 +19,13 @@ function App() {
         <GlobalStyle />
         <Nav />
         <Switch>
-          <Route path="/" exact>
+          <Route exact path="/" element={About}>
             <About />
           </Route>
-          <Route path="/work">
+          <Route path="/OurWork" exact element={OurWork}>
             <OurWork />
           </Route>
-          <Route path="/contact">
+          <Route path="/Contact" element={Contact}>
             <Contact />
           </Route>
         </Switch>

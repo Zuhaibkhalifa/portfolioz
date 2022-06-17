@@ -6,19 +6,19 @@ const Nav = () => {
   return (
     <StyledNav>
       <h1>
-        <Link id="logo" to="/">
+        <Link id="logo" to={"/"}>
           PortfolioZ
         </Link>
       </h1>
       <ul>
         <li>
-          <Link to="/">1. About us</Link>
+          <Link to="/">About</Link>
         </li>
         <li>
-          <Link to="/work">2. Our Work</Link>
+          <Link to="/OurWork">My Works</Link>
         </li>
         <li>
-          <Link to="/contact">3. Contact</Link>
+          <Link to="/Contact">Contact</Link>
         </li>
       </ul>
     </StyledNav>
